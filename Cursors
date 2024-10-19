@@ -1,0 +1,31 @@
+Cursor
+
+-- Assuming you have a table named "Students"
+CREATE TABLE Students (
+    id INT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    age INT NOT NULL,
+    grade INT
+);
+
+-- Insert sample data into the Students table
+INSERT INTO Students (id, name, age, grade) VALUES (1, 'Alice', 20, 85);
+INSERT INTO Students (id, name, age, grade) VALUES (2, 'Bob', 22, 92);
+INSERT INTO Students (id, name, age, grade) VALUES (3, 'Charlie', 23, 78);
+INSERT INTO Students (id, name, age, grade) VALUES (4, 'Diana', 21, 88);
+
+-- PL/SQL Block to demonstrate implicit cursor
+BEGIN
+    -- 1. Create the content area using an implicit cursor
+    FOR student IN (SELECT * FROM Students) LOOP
+        -- 2. Implicit cursor is opened automatically by the FOR loop
+        -- 3. Fetch each record into the student cursor variable
+        DBMS_OUTPUT.PUT_LINE('ID: ' || student.id || 
+                             ', Name: ' || student.name || 
+                             ', Age: ' || student.age || 
+                             ', Grade: ' || student.grade);
+    END LOOP;
+
+    -- 4. The implicit cursor is closed automatically at the end of the loop
+END;
+/
