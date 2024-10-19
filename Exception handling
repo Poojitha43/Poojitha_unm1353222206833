@@ -1,0 +1,25 @@
+// Divide by
+
+begin try
+
+declare @aint, @bint, @c int
+
+Set @a=30
+
+Set @b=0
+
+set @c =@a/@b
+
+Print @C
+
+end try
+
+begin Catch
+
+Print value cannot be O'
+
+Print error_message()
+
+Print error-line()
+
+end Catch
