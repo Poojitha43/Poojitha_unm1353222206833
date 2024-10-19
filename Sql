@@ -1,0 +1,20 @@
+
+CREATE DATABASE StudentDB;
+USE StudentDB;
+
+CREATE TABLE Students (
+    id INT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    age INT NOT NULL,
+    grade INT
+INSERT INTO Students (id, name, age, grade) VALUES (1, 'Alice', 20, 85);
+INSERT INTO Students (id, name, age, grade) VALUES (2, 'Bob', 22, 92);
+INSERT INTO Students (id, name, age, grade) VALUES (3, 'Charlie', 23,78);
+SELECT * FROM Students;
+SELECT * FROM Students
+WHERE grade > (SELECT AVG(grade) FROM Students);
+SELECT 
+    AVG(grade) AS avg_grade, 
+    MAX(grade) AS max_grade, 
+    MIN(grade) AS min_grade
+FROM Students;
