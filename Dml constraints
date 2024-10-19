@@ -1,0 +1,17 @@
+DML with foratmins
+
+the ab trant inte stud Values ('101', 'abi', 198405780०११, १) ('108', 'haru, '87630340)),
+
+(10u', 'àchủ, 3¥108416
+
+inent into department Values ('1001', 'Cs'), ('1002, cdem ('100%', 'phy'), ('1004',
+
+Select Adno-No, age from stud alter table Stud add deptid numerie (5) Opaste Shed set deptid = '1001' where Admno-No=101 Update stud set sal deptid = '1002 where AdmmeNo=103 Update Stand Set deptid='100%' Where AdmeNo='10'1 Update Stud Set deptid = '1004' Where Adm-Noi
+
+select * from stud
+
+Select from department
+
+Select "into Student from stud Where 1=2
+
+Select Stud-Aden-No, Std. Stdrame, department. deptramo from stud, department where Stud. depted = department. deptid delete from Stud Where Adm_NO = '104' delete from Stud.
