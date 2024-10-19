@@ -1,0 +1,21 @@
+DDL WWith Constraints
+
+Greats database abi
+
+Create table Student (Stolid numeric (3) Not Null,
+
+Stdrame Varchar (20), Stoladdress Varchas Stolphino numeric (10)
+
+Create table department (deptid numeric (5) primary Kay, deptrame Vorehar (15));
+
+Alten table Studerd add primary Key (stdid)
+
+Alter table Student alter column std age numeric (4);
+
+Alter table student alter Column std address Varchar (25);
+
+Alter table do Student drop column Stdaddress
+
+Exec sp_RENAME Student. Stdid', ( Adno_No', 'COLOMN
+
+Exec SP-RENAME labi.dbo. Student', 'Stud'
